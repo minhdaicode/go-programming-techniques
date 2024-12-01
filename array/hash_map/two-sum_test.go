@@ -13,18 +13,27 @@ func TestTwoSum(t *testing.T) {
 		target int
 		want   []int
 	}{
+		// input = [2,7,11,15]
+		// target = 9
+		// want = [0,1]
 		{
 			name:   "test case 1",
 			input:  []int{2, 7, 11, 15},
 			target: 9,
 			want:   []int{0, 1},
 		},
+		// input = [3,2,4]
+		// target = 6
+		// want = [1,2]
 		{
 			name:   "test case 2",
 			input:  []int{3, 2, 4},
 			target: 6,
 			want:   []int{1, 2},
 		},
+		// input = [3,3]
+		// target = 6
+		// want = [0,1]
 		{
 			name:   "test case 3",
 			input:  []int{3, 3},

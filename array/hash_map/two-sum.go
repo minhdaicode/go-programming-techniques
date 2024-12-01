@@ -1,5 +1,7 @@
 package array
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 func TwoSum(nums []int, target int) []int {
 	m := make(map[int]int)
 	for i, num := range nums {

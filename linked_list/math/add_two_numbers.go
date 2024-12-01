@@ -5,6 +5,8 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// Time complexity: O(m+n)
+// Space complexity: O(m+n)
 func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	head := &ListNode{}
 	cur := head

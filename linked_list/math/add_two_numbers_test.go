@@ -1,7 +1,7 @@
 package linkedlist_test
 
 import (
-	"go-programming-techniques/math/linkedlist"
+	linkedlist "go-programming-techniques/linkedlist/math"
 	"reflect"
 	"testing"
 )
@@ -13,6 +13,9 @@ func TestAddTwoNumbers(t *testing.T) {
 		l2   *linkedlist.ListNode
 		want *linkedlist.ListNode
 	}{
+		// l1 = [2,4,3]
+		// l2 = [5,6,4]
+		// want = [7,0,8]
 		{
 			name: "test case 1",
 			l1: &linkedlist.ListNode{Val: 2,
@@ -31,12 +34,18 @@ func TestAddTwoNumbers(t *testing.T) {
 				},
 			},
 		},
+		// l1 = [0]
+		// l2 = [0]
+		// want = [0]
 		{
 			name: "test case 2",
 			l1:   &linkedlist.ListNode{Val: 0, Next: nil},
 			l2:   &linkedlist.ListNode{Val: 0, Next: nil},
 			want: &linkedlist.ListNode{Val: 0, Next: nil},
 		},
+		// l1 = [9,9,9,9,9,9,9]
+		// l2 = [9,9,9,9]
+		// want = [8,9,9,9,0,0,0,1]
 		{
 			name: "test case 3",
 			l1: &linkedlist.ListNode{Val: 9,
