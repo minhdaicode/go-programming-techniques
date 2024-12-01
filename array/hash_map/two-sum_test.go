@@ -1,7 +1,7 @@
 package array_test
 
 import (
-	"go-programming-techniques/hashtable/array"
+	array "go-programming-techniques/array/hash_map"
 	"reflect"
 	"testing"
 )
