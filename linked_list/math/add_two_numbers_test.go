@@ -1,7 +1,7 @@
 package linkedlist_test
 
 import (
-	linkedlist "go-programming-techniques/linkedlist/math"
+	linkedlist "go-programming-techniques/linked_list/math"
 	"reflect"
 	"testing"
 )

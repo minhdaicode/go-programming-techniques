@@ -13,8 +13,8 @@ func TestMaJorityElement(t *testing.T) {
 		input []int
 		want  int
 	}{
-		// input = [3,2,2,3]
-		// want = 2
+		// input = [3,2,3]
+		// want = 3
 		{
 			name:  "test case 1",
 			input: []int{3, 2, 3},
@@ -28,7 +28,7 @@ func TestMaJorityElement(t *testing.T) {
 			want:  2,
 		},
 		// input = [3,3,4]
-		// want = 4
+		// want = 3
 		{
 			name:  "test case 3",
 			input: []int{3, 3, 4},
