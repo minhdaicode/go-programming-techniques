@@ -36,7 +36,6 @@ func TestRotateArray(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			array.Rotate(tt.input, tt.step)
-
 			if !reflect.DeepEqual(tt.input, tt.want) {
 				t.Errorf("got %d ,want %d", tt.input, tt.want)
 			}
